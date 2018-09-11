@@ -353,6 +353,22 @@ http://support.apple.com/kb/HT1343
   	
   	`Cmd-Up`
   	
+* Show local time machine snapshots
+
+	`tmutil listlocalsnapshotdates`
+ 	
+* Remove local snapshots
+
+	`tmutil deletelocalsnapshots`
+	
+* Show Hidden files
+
+	`defaults write com.apple.finder AppleShowAllFiles true; killall Finder`
+	
+* Show Hidden files in Finder
+
+	`Command-Shift-.` 
+  	
 # Security 
 
 *  Disable guest account and sharing:
