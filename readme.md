@@ -1,4 +1,4 @@
-# Hardware 
+# Hardware
 
 *  Boot Keys
 
@@ -31,12 +31,19 @@ http://support.apple.com/kb/HT1343
 3. Press the power button to turn on the compute
 
 
+* Remap § with ~ on International Keyboard
+
+	```
+	hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000064,"HIDKeyboardModifierMappingDst":0x700000035},{"HIDKeyboardModifierMappingSrc":0x700000035,"HIDKeyboardModifierMappingDst":0x700000064}]}'
+
+	```
+
 # Filesystem
 
 * Mac OS X Hidden Files & Directories
 
 | File/Directory| Description   |
-| ------------- |:-------------| 
+| ------------- |:-------------|
 |._whatever	| These files are created on volumes that don't natively support full HFS file characteristics (e.g. ufs volumes, Windows fileshares, etc). When a Mac file is copied to such a volume, its data fork is stored under the file's regular name, and the additional HFS information (resource fork, type & creator codes, etc) is stored in a second file (in AppleDouble format), with a name that starts with "._". (These files are, of course, invisible as far as OS-X is concerned, but not to other OS's; this can sometimes be annoying...) |
 |.DS_Store	| This file in created by the Finder to keep track of folder view options, icon positions, and other visual information about folders. A separate .DS_Store file is created in each directory to store information about that directory, so you'll find them appearing all over the directory tree, in pretty much every folder you've visited with the OS X Finder.|
 |~/.Trash		| Used to store files & folders from the boot volume that a particular user has thrown in the trash, but that haven't been erased yet.|
@@ -74,19 +81,19 @@ http://support.apple.com/kb/HT1343
 |/var/tmp	 | A place for programs to store temporary data, just like /tmp. Some programs use one, some use the other, so Mac OS X provides both. |
 |/var/vm	 | Used to store the swap files for Mac OS X's virtual memory. |
 |/var/vm/app_profile	| Holds information about various applications' virtual memory useage.|
-|/Volumes	| The /Volumes directory is the mount point for all of the drives (other than the boot volume) connected to the system. The Finder hides the Volumes directory itself, but displays its contents at the Computer level. | 
+|/Volumes	| The /Volumes directory is the mount point for all of the drives (other than the boot volume) connected to the system. The Finder hides the Volumes directory itself, but displays its contents at the Computer level. |
 
 
 * Hide Folder
-	
+
 	`chflags hidden /path/to/file/or/folder/`
 
 	`chflags nohidden /path/to/unhide/`
-	
+
 * Zip folder with password
-	
+
 	`zip -e protected.zip /file/to/protect/`
-	
+
 
 * Remove Dot Files
 
@@ -94,15 +101,15 @@ http://support.apple.com/kb/HT1343
 
 * shows all files in finder
 
-	`defaults write com.apple.Finder AppleShowAllFiles 1` 
-	
+	`defaults write com.apple.Finder AppleShowAllFiles 1`
+
 * Search using spotlight
 	`mdfind "IBM documents”`
 
 * Search using spotlight only one directory
 
 	`mdfind -onlyin ~/Documents essay`
-	
+
 * Erase and rebuild spotlight index
 
 	`mdutil -E`
@@ -121,16 +128,16 @@ http://support.apple.com/kb/HT1343
 
 
 * Copy the path of the file:
- 	
+
  	`Press the Option key in a file context menu `
- 	
+
 
 * verify that the SHA-1 digest of any download matches the digest published there
 
 	`/usr/bin/openssl sha1 download.dmg`
 
 * Remove DS Store Files
-	
+
 	`sudo find / -name ".DS_Store" -depth -exec rm {} \;`
 
 # Other
@@ -172,8 +179,8 @@ http://support.apple.com/kb/HT1343
 * Launchd scripts are stored in the folllowing locations:
 
 	```
-	~/Library/LaunchAgents   
-	/Library/LaunchAgents         
+	~/Library/LaunchAgents
+	/Library/LaunchAgents
 	/Library/LaunchDaemons
 	/System/Library/LaunchAgents
 	/System/Library/LaunchDaemons
@@ -184,12 +191,12 @@ http://support.apple.com/kb/HT1343
 
 	`diskutil list`
 
-* Find all wifinetworks 
+* Find all wifinetworks
 
 	```
 	defaults read /Library/Preferences/SystemConfiguration/com.apple.airport.preferences RememberedNetworks | 	egrep -o '(SSID_STR|_timeStamp).+' | sed 's/^.*= \(.*\);$/\1/' | sed 's/^"\(.*\)"$/\1/' | sed 's/\	([0-9]\{4\}-..-..\).*/\1/'
 	```
-	
+
 
 * Opensnoop
 
@@ -207,7 +214,7 @@ http://support.apple.com/kb/HT1343
 
 * Prevent Screensaver
 	`caffeinate -t 3600 `
-	
+
 * open multiple instances
 	`open -n /Applications/Safari.app/`
 
@@ -235,32 +242,32 @@ http://support.apple.com/kb/HT1343
 
 * show which processes are using network
 
-	`nettop -` 
+	`nettop -`
 
 * shows open file system files
 
 	`fs_usage`
 
-* increase or decrease your volume by quarter increments: 
-	
+* increase or decrease your volume by quarter increments:
+
 	`option+shift + volume`
 
 * hide window
 
-	`command + h` 
+	`command + h`
 
 * File Editing
 
 	`ctrl+A: beginning of line`
-	
+
 	`ctrl+E: end of line`
 
 * restart the Mac:
-	
-	`ctrl + ⌘ + ⏏` 
+
+	`ctrl + ⌘ + ⏏`
 
 * kill not responding programs (including the Finder)
-  
+
   	`option + ⌘ + esc  Select Force Quit from the menu that appears.`
 
 
@@ -311,65 +318,65 @@ http://support.apple.com/kb/HT1343
 
 
 * Change Auto Update Frequency to 3 days
-	
+
 	`sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate ScheduleFrequency 3`
 
 * Paste Text without formatting
-	
+
 	`Command++Shift+V`
 
 * Find last hibernate/sleep time
-	
+
 	`pmset -g log | grep sleep | tail -n 2`
 
 * Query Bonjour
-	
+
 	`dscacheutil -q host -a name My-MacBook-Pro.local`
 
 * Change default screenshot to jpg
-	
+
 	`sudo defaults write com.apple.screencapture type jpg`
-	
+
 	`sudo killall SystemUIServer`
 
 * Textedit prevent new document popup
-	
+
 	`defaults write -g NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false`
 
 
 * Insert an emoji anywhere:
- 	
+
  	`Ctrl+Cmd+Space.`
 
 * To toggle hidden files In Finder:
- 	
+
  	`Shift+Cmd+.`
 
 * select the output of the previous command.:
- 	
+
  	`cmd-shift-A.`
 
 * This scrolls you back up to the previous command.
-  	
+
   	`Cmd-Up`
-  	
+
 * Show local time machine snapshots
 
 	`tmutil listlocalsnapshotdates`
- 	
+
 * Remove local snapshots
 
 	`tmutil deletelocalsnapshots`
-	
+
 * Show Hidden files
 
 	`defaults write com.apple.finder AppleShowAllFiles true; killall Finder`
-	
+
 * Show Hidden files in Finder
 
-	`Command-Shift-.` 
-  	
-# Security 
+	`Command-Shift-.`
+
+# Security
 
 *  Disable guest account and sharing:
 
@@ -386,15 +393,15 @@ http://support.apple.com/kb/HT1343
 	* In the Firewall tab, click "Start" to turn firewall on. Next, click on "Advanced..." and enable "Block all incoming connections."
 
 * Secure Users' Home Folder Permissions
-	
+
 	To prevent users and guests from perusing other users' home folders, run the following command for each home folder:
-	
+
 	`sudo chmod go-rx /Users/username`
-	
-* Disable Unnecessary Services. 
+
+* Disable Unnecessary Services.
 
 The following services can be found in /System/Library/ LaunchDaemons. Unless needed for the purpose shown in the second column, disable each service using the command below, which needs the full path specified:
-  sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.blued.plist 
+  sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.blued.plist
 
 | Filename   | Needed for|
 | ---------- |:----------|
@@ -421,15 +428,44 @@ The following services can be found in /System/Library/ LaunchAgents. Disable th
 
 Bonjour is Apple's implementation of Zeroconf which provides a network service discovery protocol. Using Bonjour, many programs advertise their services on the local network to facilitate configuration. While this may be beneficial in some cases, from the security perspective this makes the computer unnecessarily visible and generates unwanted network traffic.
 Disable Bonjour's multicast advertisements with the following command and reboot:
-	
+
 	```
 	sudo defaults write /System/Library/
 	LaunchDaemons/com.apple.mDNSResponder
 	ProgramArguments -array-add  "-NoMulticastAdvertisements"
 	```
-	
+
 # Other Links
 
 
 https://github.com/herrbischoff/awesome-osx-command-line - mac shortcuts
+
+
+# Chrome
+
+Shortcuts
+
+	Command + T reopen closed tab
+	Xommand + y = history
+	Command + 1  = first tab
+	Command + r = reload
+	Command + Shift + n = incognito
+	Command + t - new tab
+	Command + w - close tab
+	Command + Shift + T - reopen last tab
+	Command + option + > - cycle through tabs
+	Command + number = goes to tab number
+	Command + n = new window
+	Command + Shift + ~ = cycle between windows
+
+
+# Gmail
+
+	jk - move up and down
+	Shift + # - delete email
+
+# Finder
+
+	Cmd ⌘ ` - Cycle through open windows
+	Cmd ⌘ Shift ⇧ ` - Cycle through open windows in reverse
 
