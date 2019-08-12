@@ -142,27 +142,7 @@ http://support.apple.com/kb/HT1343
 
 # Other
 
-* Screenshots
 
-	* Command-Shift-3: Take a screenshot of the screen, and save it as a file on the desktop
-
-	* Command-Shift-4, then select an area: Take a screenshot of an area and save it as a file on the desktop
-
-	* Command-Shift-4, then space, then click a window: Take a screenshot of a window and save it as a file on the desktop
-
-	* Command-Control-Shift-3: Take a screenshot of the screen, and save it to the clipboard
-
-	* Command-Control-Shift-4, then select an area: Take a screenshot of an area and save it to the clipboard
-
-	* Command-Control-Shift-4, then space, then click a window: Take a screenshot of a window and save it to the clipboard
-
-* Copy window screenshot to clipboard
-
-	`screencapture -c -W`
-
-* Capture entire screen to new email
-
-	`screencapture -C -M image.png`
 
 * Find All Startup items
 
@@ -239,7 +219,6 @@ http://support.apple.com/kb/HT1343
 	`sudo opensnoop -p PID`
 
 
-
 * show which processes are using network
 
 	`nettop -`
@@ -252,15 +231,6 @@ http://support.apple.com/kb/HT1343
 
 	`option+shift + volume`
 
-* hide window
-
-	`command + h`
-
-* File Editing
-
-	`ctrl+A: beginning of line`
-
-	`ctrl+E: end of line`
 
 * restart the Mac:
 
@@ -276,11 +246,7 @@ http://support.apple.com/kb/HT1343
 	`While you are using ⌘ + ⇥ to cycle through open applications, you can press Q before you release ⌘ to close the app`
 
 * Terminal
--option left or right to move word by word
--option click to move cursor in terminal to mouse
--option, click+ select, option delete, deletes section
--ctrl+D is del key
--ctrl+K deletes from cursor to end of line
+
 
 * Finder
 
@@ -292,9 +258,6 @@ http://support.apple.com/kb/HT1343
 
 	* ⌘+Shift+4 and Space: When you press Command+Shift+4 you get to take a screenshot of a specific area on the screen. If you hit the space bar afterwards, however, you can click on any window to get a nice PNG with transparent background of that window.
 
-	* ⌘+Option+M:  Minimize all windows to the dock with this keyboard shortcut.
-
-	* ⌘+(Shift)+~: If you'd rather cycle through millions of windows, you can use this key command to do so. Add or remove the shift key to change directions.
 
 	* ⌘+Option+Space: Use the option key to get a Spotlight search window and get more specific about what you're trying to find.
 
@@ -344,9 +307,7 @@ http://support.apple.com/kb/HT1343
 	`defaults write -g NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false`
 
 
-* Insert an emoji anywhere:
 
- 	`Ctrl+Cmd+Space.`
 
 * To toggle hidden files In Finder:
 
@@ -469,3 +430,99 @@ Shortcuts
 	Cmd ⌘ ` - Cycle through open windows
 	Cmd ⌘ Shift ⇧ ` - Cycle through open windows in reverse
 
+# Window Management
+
+	Command-~ to switch between windows of the current program
+
+	
+* hide window
+
+	`command + h`
+
+	* ⌘+Option+M:  Minimize all windows to the dock with this keyboard shortcut.
+
+	* ⌘+(Shift)+~: If you'd rather cycle through millions of windows, you can use this key command to do so. Add or remove the shift key to change directions.
+
+# Text Editing
+
+
+	Command-e, put the selected text on the find clipboard.
+	Command-g (find next) will search for the selected text without sacrificing the copy/paste clipboard
+	
+	cntrl+a: go to start of a line
+	cntrl+p: go up one line
+	
+	cntrl+n: go down one line
+	
+	cntrl+k: cut line proceeding cursor
+	
+	cntrl+f: forward one char
+	
+	cntrl+b: back one char
+	
+	`ctrl+A: beginning of line`
+
+	`ctrl+E: end of line`
+	
+	Shift-option-command-v: paste text without any formatting 
+	
+	* Insert an emoji anywhere:
+
+ 	`Ctrl+Cmd+Space.`
+	
+	-option left or right to move word by word
+	-option click to move cursor in terminal to mouse
+	-option, click+ select, option delete, deletes section
+	-ctrl+D is del key
+	-ctrl+K deletes from cursor to end of line
+
+# Screenshots
+
+	* Command-Shift-3: Take a screenshot of the screen, and save it as a file on the desktop
+
+	* Command-Shift-4, then select an area: Take a screenshot of an area and save it as a file on the desktop
+
+	* Command-Shift-4, then space, then click a window: Take a screenshot of a window and save it as a file on the desktop
+
+	* Command-Control-Shift-3: Take a screenshot of the screen, and save it to the clipboard
+
+	* Command-Control-Shift-4, then select an area: Take a screenshot of an area and save it to the clipboard
+
+	* Command-Control-Shift-4, then space, then click a window: Take a screenshot of a window and save it to the clipboard
+
+* Copy window screenshot to clipboard
+
+	`screencapture -c -W`
+
+* Capture entire screen to new email
+
+	`screencapture -C -M image.png`
+
+# Google Search
+
+	Search
+	[sunset]
+	[watch]
+	“SFO Terminal 1”
+	Youtube
+	use the numbered keys to seek in a video. For example, hitting “2” will take you 20 percent 
+	File_name_V2: Freeze moments in time by naming different versions of the docs you edit frequently. In a Doc, Sheet, or Slides go to File > Version History > Name current version. Name any version then access it easily from "Version history" by name.
+	
+	
+	OR
+	Examples: jobs OR gates / jobs | gates
+	
+	AND
+	jobs AND gates
+	
+	Grouping
+	(ipad OR iphone) apple
+	
+	Cache
+	cache:apple.com
+	
+	Filetype
+	apple filetype:pdf / apple ext:pdf
+	
+	Number range
+	Example: wwdc video 2010..2014
