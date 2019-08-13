@@ -418,6 +418,7 @@ Shortcuts
 	Command + number = goes to tab number
 	Command + n = new window
 	Command + Shift + ~ = cycle between windows
+	Command + l = go to search 
 
 
 # Gmail
