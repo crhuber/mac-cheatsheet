@@ -437,10 +437,13 @@ Shortcuts
 	Cmd ⌘ ` - Cycle through open windows
 	Cmd ⌘ Shift ⇧ ` - Cycle through open windows in reverse
 	Command + Tab until you get the app's icon. Before releasing the Command key, press and hold the Option key - Restore minimized window
+	Command + Tab until you get the app's icon. Then press up or down - Restore minimized window
 
 # Window Management
 
-	Command-~ to switch between windows of the current program
+	Command + ~ to switch between windows of the current program
+	Command + h - to hide current window
+	Command + L to restore minimize application 
 
 	
 * hide window
