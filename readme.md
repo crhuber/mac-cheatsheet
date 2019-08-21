@@ -406,8 +406,8 @@ https://github.com/herrbischoff/awesome-osx-command-line - mac shortcuts
 
 Shortcuts
 
-	Command + T reopen closed tab
-	Xommand + y = history
+	Command + t reopen closed tab
+	Command + y = history
 	Command + 1  = first tab
 	Command + r = reload
 	Command + Shift + n = incognito
@@ -419,8 +419,13 @@ Shortcuts
 	Command + n = new window
 	Command + Shift + ~ = cycle between windows
 	Command + l = go to search
+	Command + r = reload
+	Command + Shift + r = hard reload
 	Control + tab - cycle through tabs
 
+# Github
+
+	t - search for a file
 
 # Gmail
 
