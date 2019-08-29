@@ -443,9 +443,10 @@ Shortcuts
 
 	Command + ~ to switch between windows of the current program
 	Command + h - to hide current window
-	Command + L to restore minimize application 
+	Command + L to restore minimize application
+	fn + up = page up
 
-	
+
 * hide window
 
 	`command + h`
@@ -459,28 +460,28 @@ Shortcuts
 
 	Command-e, put the selected text on the find clipboard.
 	Command-g (find next) will search for the selected text without sacrificing the copy/paste clipboard
-	
+
 	cntrl+a: go to start of a line
 	cntrl+p: go up one line
-	
+
 	cntrl+n: go down one line
-	
+
 	cntrl+k: cut line proceeding cursor
-	
+
 	cntrl+f: forward one char
-	
+
 	cntrl+b: back one char
-	
+
 	`ctrl+A: beginning of line`
 
 	`ctrl+E: end of line`
-	
-	Shift-option-command-v: paste text without any formatting 
-	
+
+	Shift-option-command-v: paste text without any formatting
+
 	* Insert an emoji anywhere:
 
  	`Ctrl+Cmd+Space.`
-	
+
 	-option left or right to move word by word
 	-option click to move cursor in terminal to mouse
 	-option, click+ select, option delete, deletes section
@@ -516,24 +517,24 @@ Shortcuts
 	[watch]
 	“SFO Terminal 1”
 	Youtube
-	use the numbered keys to seek in a video. For example, hitting “2” will take you 20 percent 
+	use the numbered keys to seek in a video. For example, hitting “2” will take you 20 percent
 	File_name_V2: Freeze moments in time by naming different versions of the docs you edit frequently. In a Doc, Sheet, or Slides go to File > Version History > Name current version. Name any version then access it easily from "Version history" by name.
-	
-	
+
+
 	OR
 	Examples: jobs OR gates / jobs | gates
-	
+
 	AND
 	jobs AND gates
-	
+
 	Grouping
 	(ipad OR iphone) apple
-	
+
 	Cache
 	cache:apple.com
-	
+
 	Filetype
 	apple filetype:pdf / apple ext:pdf
-	
+
 	Number range
 	Example: wwdc video 2010..2014
