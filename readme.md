@@ -413,7 +413,7 @@ https://github.com/herrbischoff/awesome-osx-command-line - mac shortcuts
 
 Shortcuts
 
-	Command + t reopen closed tab
+	Command + Shift + t reopen closed tab
 	Command + y = history
 	Command + 1  = first tab
 	Command + r = reload
