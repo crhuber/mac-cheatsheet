@@ -545,3 +545,11 @@ Shortcuts
 
 	Number range
 	Example: wwdc video 2010..2014
+
+# Google Chrome
+
+configure translation settings
+
+```
+chrome://translate-internals/
+```
