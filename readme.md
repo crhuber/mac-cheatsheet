@@ -344,6 +344,10 @@ defaults write -g InitialKeyRepeat -int 10
 
 	`Command-Shift-.`
 
+* Show Network Speed
+
+	`networkQuality`
+
 # Security
 
 *  Disable guest account and sharing:
