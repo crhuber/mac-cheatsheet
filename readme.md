@@ -44,6 +44,11 @@ defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
 ```
 
+* Faster Mouse Acceleration
+
+```
+defaults write -g com.apple.trackpad.scaling -float 5.0
+```
 
 # Filesystem
 
