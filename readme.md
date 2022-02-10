@@ -41,13 +41,15 @@ http://support.apple.com/kb/HT1343
 
 ```
 defaults write -g KeyRepeat -int 1
-defaults write -g InitialKeyRepeat -int 10
+defaults write -g InitialKeyRepeat -int 8
+#then logout / login 
 ```
 
 * Faster Mouse Acceleration
 
 ```
-defaults write -g com.apple.trackpad.scaling -float 5.0
+defaults write -g com.apple.trackpad.scaling -float 10.0
+defaults write -g com.apple.trackpad.scaling -float 10.0
 ```
 
 # Filesystem
