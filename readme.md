@@ -41,7 +41,7 @@ http://support.apple.com/kb/HT1343
 
 ```
 defaults write -g KeyRepeat -int 1
-defaults write -g InitialKeyRepeat -int 8
+defaults write -g InitialKeyRepeat -int 7
 #then logout / login 
 ```
 
