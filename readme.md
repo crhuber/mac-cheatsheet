@@ -355,6 +355,11 @@ defaults write -g com.apple.trackpad.scaling -float 10.0
 
 	`networkQuality`
 
+* Install gnu version of tools
+
+	`brew install coreutils`
+	`berw install findutils gnu-tar gnu-sed gawk gnutls gnu-indent gnu-getopt grep`
+
 # Security
 
 *  Disable guest account and sharing:
