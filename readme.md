@@ -698,3 +698,10 @@ Some particularly useful ones:
 `system_profiler SPPowerDataType` prints power and battery information, including the current AC wattage and battery cycle count.
 
 `system_profiler SPDeveloperToolsDataType` prints the currently active version of the Xcode developer tools and SDK.
+
+* Quicklook
+
+`qlmanage -r cache` - clears quicklook cache
+
+-t - Display generated Quick Look thumbnails for selected files.
+-p - Display generated Quick Look previews for selected files.
